@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daffitness - Loja de Roupas de Academia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Daffitness</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#calcas">Calças</a></li>
+                    <li><a href="#saias">Saias</a></li>
+                    <li><a href="#camisetas">Camisetas</a></li>
+                    <li><a href="#shorts">Shorts</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Bem-vindo à Daffitness!</h2>
+                <p>Explore nossa linha de roupas para academia com estilo e conforto.</p>
+                <a href="#calcas" class="btn-primary">Veja nosso catálogo</a>
+            </div>
+        </section>
+
+        <section id="calcas" class="produtos-section">
+            <div class="container">
+                <h2>Calças</h2>
+                <div class="produtos-carousel">
+                    <div class="produtos-container">
+                        <!-- Repita este bloco para cada produto -->
+                        <article class="produto">
+                            <img src="calca1.jpg" alt="Calça Legging" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Calça Legging</h3>
+                                <p>Descrição: Calça legging com alta elasticidade e conforto.</p>
+                                <p class="preco">Preço: R$ 89,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Adicione mais produtos aqui -->
+                        <article class="produto">
+                            <img src="calca2.jpg" alt="Calça Jogging" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Calça Jogging</h3>
+                                <p>Descrição: Calça para treinos mais intensos.</p>
+                                <p class="preco">Preço: R$ 99,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Continue adicionando produtos -->
+                        <article class="produto">
+                            <img src="calca3.jpg" alt="Calça Slim" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Calça Slim</h3>
+                                <p>Descrição: Calça slim fit para um ajuste perfeito.</p>
+                                <p class="preco">Preço: R$ 89,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="calca4.jpg" alt="Calça Sport" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Calça Sport</h3>
+                                <p>Descrição: Calça esportiva para atividades ao ar livre.</p>
+                                <p class="preco">Preço: R$ 109,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Mais produtos -->
+                        <article class="produto">
+                            <img src="calca5.jpg" alt="Calça Active" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Calça Active</h3>
+                                <p>Descrição: Calça para atividades intensas com suporte adicional.</p>
+                                <p class="preco">Preço: R$ 119,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="calca6.jpg" alt="Calça Running" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Calça Running</h3>
+                                <p>Descrição: Calça para corrida com alta respirabilidade.</p>
+                                <p class="preco">Preço: R$ 99,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="calca7.jpg" alt="Calça Yoga" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Calça Yoga</h3>
+                                <p>Descrição: Calça flexível ideal para yoga e pilates.</p>
+                                <p class="preco">Preço: R$ 89,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="calca8.jpg" alt="Calça Casual" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Calça Casual</h3>
+                                <p>Descrição: Calça casual para uso diário com estilo.</p>
+                                <p class="preco">Preço: R$ 79,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel('calcas', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel('calcas', 1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="saias" class="produtos-section">
+            <div class="container">
+                <h2>Saias</h2>
+                <div class="produtos-carousel">
+                    <div class="produtos-container">
+                        <!-- Repita este bloco para cada produto -->
+                        <article class="produto">
+                            <img src="saia1.jpg" alt="Saia Fitness" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Saia Fitness</h3>
+                                <p>Descrição: Saia leve e respirável para seus treinos.</p>
+                                <p class="preco">Preço: R$ 59,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Adicione mais produtos aqui -->
+                        <article class="produto">
+                            <img src="saia2.jpg" alt="Saia Esportiva" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Saia Esportiva</h3>
+                                <p>Descrição: Saia com detalhes esportivos para máxima performance.</p>
+                                <p class="preco">Preço: R$ 69,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Continue adicionando produtos -->
+                        <article class="produto">
+                            <img src="saia3.jpg" alt="Saia Casual" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Saia Casual</h3>
+                                <p>Descrição: Saia casual para o dia a dia.</p>
+                                <p class="preco">Preço: R$ 55,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="saia4.jpg" alt="Saia Stretch" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Saia Stretch</h3>
+                                <p>Descrição: Saia com tecido stretch para maior conforto.</p>
+                                <p class="preco">Preço: R$ 79,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Mais produtos -->
+                                                <article class="produto">
+                            <img src="saia5.jpg" alt="Saia Formal" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Saia Formal</h3>
+                                <p>Descrição: Saia com design sofisticado para eventos especiais.</p>
+                                <p class="preco">Preço: R$ 99,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="saia6.jpg" alt="Saia Curta" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Saia Curta</h3>
+                                <p>Descrição: Saia curta para um look casual e moderno.</p>
+                                <p class="preco">Preço: R$ 59,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="saia7.jpg" alt="Saia Longa" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Saia Longa</h3>
+                                <p>Descrição: Saia longa com conforto e elegância.</p>
+                                <p class="preco">Preço: R$ 89,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="saia8.jpg" alt="Saia Midi" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Saia Midi</h3>
+                                <p>Descrição: Saia midi ideal para diferentes ocasiões.</p>
+                                <p class="preco">Preço: R$ 69,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel('saias', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel('saias', 1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="camisetas" class="produtos-section">
+            <div class="container">
+                <h2>Camisetas</h2>
+                <div class="produtos-carousel">
+                    <div class="produtos-container">
+                        <!-- Repita este bloco para cada produto -->
+                        <article class="produto">
+                            <img src="camiseta1.jpg" alt="Camiseta Básica" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Camiseta Básica</h3>
+                                <p>Descrição: Camiseta básica com conforto para o dia a dia.</p>
+                                <p class="preco">Preço: R$ 49,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Adicione mais produtos aqui -->
+                        <article class="produto">
+                            <img src="camiseta2.jpg" alt="Camiseta Dry" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Camiseta Dry</h3>
+                                <p>Descrição: Camiseta dry-fit para treinos intensos.</p>
+                                <p class="preco">Preço: R$ 59,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Continue adicionando produtos -->
+                        <article class="produto">
+                            <img src="camiseta3.jpg" alt="Camiseta Logo" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Camiseta Logo</h3>
+                                <p>Descrição: Camiseta com logotipo em destaque.</p>
+                                <p class="preco">Preço: R$ 69,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="camiseta4.jpg" alt="Camiseta Slim" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Camiseta Slim</h3>
+                                <p>Descrição: Camiseta slim fit para um ajuste moderno.</p>
+                                <p class="preco">Preço: R$ 79,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Mais produtos -->
+                        <article class="produto">
+                            <img src="camiseta5.jpg" alt="Camiseta Trend" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Camiseta Trend</h3>
+                                <p>Descrição: Camiseta com design atual e confortável.</p>
+                                <p class="preco">Preço: R$ 89,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="camiseta6.jpg" alt="Camiseta Manga Longa" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Camiseta Manga Longa</h3>
+                                <p>Descrição: Camiseta manga longa para diferentes climas.</p>
+                                <p class="preco">Preço: R$ 99,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="camiseta7.jpg" alt="Camiseta Casual" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Camiseta Casual</h3>
+                                <p>Descrição: Camiseta casual para um estilo descontraído.</p>
+                                <p class="preco">Preço: R$ 69,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="camiseta8.jpg" alt="Camiseta Performance" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Camiseta Performance</h3>
+                                <p>Descrição: Camiseta de alta performance para treinos.</p>
+                                <p class="preco">Preço: R$ 109,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel('camisetas', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel('camisetas', 1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="shorts" class="produtos-section">
+            <div class="container">
+                <h2>Shorts</h2>
+                <div class="produtos-carousel">
+                    <div class="produtos-container">
+                        <!-- Repita este bloco para cada produto -->
+                        <article class="produto">
+                            <img src="shorts1.jpg" alt="Shorts Básico" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Shorts Básico</h3>
+                                <p>Descrição: Shorts básicos e confortáveis para atividades físicas.</p>
+                                <p class="preco">Preço: R$ 69,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Adicione mais produtos aqui -->
+                        <article class="produto">
+                            <img src="shorts2.jpg" alt="Shorts Esportivo" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Shorts Esportivo</h3>
+                                <p>Descrição: Shorts projetados para alta performance.</p>
+                                <p class="preco">Preço: R$ 79,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Continue adicionando produtos -->
+                        <article class="produto">
+                            <img src="shorts3.jpg" alt="Shorts Casual" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Shorts Casual</h3>
+                                <p>Descrição: Shorts casuais para uso diário e conforto.</p>
+                                <p class="preco">Preço: R$ 59,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="shorts4.jpg" alt="Shorts Active" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Shorts Active</h3>
+                                <p>Descrição: Shorts com design ativo para melhor mobilidade.</p>
+                                <p class="preco">Preço: R$ 89,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <!-- Mais produtos -->
+                        <article class="produto">
+                            <img src="shorts5.jpg" alt="Shorts Running" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Shorts Running</h3>
+                                <p>Descrição: Shorts leves e respiráveis para corridas.</p>
+                                <p class="preco">Preço: R$ 69,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="shorts6.jpg" alt="Shorts Fitness" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Shorts Fitness</h3>
+                                <p>Descrição: Shorts fitness para treinos variados.</p>
+                                <p class="preco">Preço: R$ 79,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="shorts7.jpg" alt="Shorts Relax" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Shorts Relax</h3>
+                                <p>Descrição: Shorts relax para conforto total.</p>
+                                <p class="preco">Preço: R$ 59,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                        <article class="produto">
+                            <img src="shorts8.jpg" alt="Shorts Casual Chic" class="imagem-produto">
+                            <div class="descricao-produto">
+                                <h3>Shorts Casual Chic</h3>
+                                <p>Descrição: Shorts com design casual e elegante.</p>
+                                <p class="preco">Preço: R$ 89,90</p>
+                                <button class="btn-secondary">Comprar</button>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="carousel-button prev" onclick="moveCarousel('shorts', -1)">&#10094;</button>
+                    <button class="carousel-button next" onclick="moveCarousel('shorts', 1)">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Para mais informações ou dúvidas, entre em contato conosco:</p>
+                <a href="mailto:daf.fitness@gmail.com" class="btn-primary">Enviar E-mail</a>
+                <a href="https://www.instagram.com/_patidutra_" target="_blank" class="btn-primary">Instagram</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Daffitness. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
